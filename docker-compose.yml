@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: .
+    container_name: liquidcity-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Keep trained models across container rebuilds during development.
+      - ./app/ml/models:/app/app/ml/models
+    restart: unless-stopped
