@@ -11,3 +11,5 @@ app/ml/models/*.pkl
 *.egg-info/
 .DS_Store
 >>>>>>> 743badc0c27ebfacbf975bd56c13feb1efa9b407
+.vercel
+.env*.local
