@@ -8787,3 +8787,5 @@ INFO:     127.0.0.1:57043 - "GET /social-signals HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57042 - "GET /digital-twin/events/techhack-2026/state HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57077 - "POST /digital-twin/events/techhack-2026/what-if HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57613 - "GET /partners HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58479 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58479 - "GET /favicon.ico HTTP/1.1" 404 Not Found
