@@ -1,19 +1,9 @@
 {
-  "version": 2,
-  "builds": [
+  "framework": "vite",
+  "rewrites": [
     {
-      "src": "app/main.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.12"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app/main.py"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

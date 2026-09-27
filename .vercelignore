@@ -1,0 +1,10 @@
+requirements.txt
+.python-version
+app/
+tests/
+migrations/
+venv/
+Dockerfile
+docker-compose.yml
+docker-entrypoint.sh
+run_liquid_city.sh
