@@ -54,11 +54,11 @@ app.include_router(digital_twin.router)
 app.include_router(social_signals.router)
 
 
-@app.get("/", tags=["health"])
+@app.api_route("/", methods=["GET", "HEAD"], tags=["health"])
 def root():
     return {"message": "Liquid City API with Weather-Driven Digital Twin is running", "docs": "/docs"}
 
 
-@app.get("/health", tags=["health"])
+@app.api_route("/health", methods=["GET", "HEAD"], tags=["health"])
 def health():
     return {"status": "ok"}

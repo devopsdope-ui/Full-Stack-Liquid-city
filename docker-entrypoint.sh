@@ -12,5 +12,5 @@ if not os.path.exists('app/ml/models/travel_time_model.pkl'):
 if not os.path.exists('app/ml/models/recommendation_model.pkl'):
     import app.ml.train_recommendation_model as m; m.train()
 "
-
-exec uvicorn app.main:app --host 0.0.0.0 --port 8000
+PORT="${PORT:-8000}"
+exec uvicorn app.main:app --host 0.0.0.0 --port "$PORT"
